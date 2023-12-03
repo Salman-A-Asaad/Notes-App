@@ -1,7 +1,7 @@
 let container = document.getElementsByClassName("container")[0];
 
 function show() {
-  container.innerHTML = localStorage.note;
+  if(localStorage.note!=null) container.innerHTML = localStorage.note;
 }
 show();
 let button = document.getElementById("button");
